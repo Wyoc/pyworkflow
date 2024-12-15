@@ -12,6 +12,7 @@ python = "^3.8"
 typing-extensions = "^4.5.0"  # For enhanced typing support
 dataclasses = {version = "^0.8", python = "<3.7"}  # Only for Python 3.6
 pathlib = {version = "^1.0.1", python = "<3.6"}  # Only for older Python versions
+psutil = "^6.1.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.3.1"
