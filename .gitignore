@@ -19,8 +19,9 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-*.pyc
-
+ __pycache__/
+ pyworkflow/__pycache__/
+ *.pyc
 # Virtual Environment
 .env
 .venv
@@ -78,7 +79,7 @@ docs/_templates/
 dmypy.json
 .pyre_configuration
 .pytype/
-__pycache__/
+__pycache__/*.pyc
 # Jupyter Notebook
 .ipynb_checkpoints
 
@@ -90,3 +91,8 @@ __pycache__/
 workflow_checkpoints/
 *.lock
 pyworkflow/__pycache__/__init__.cpython-312.pyc
+pyworkflow/__pycache__/__init__.cpython-312.pyc
+pyworkflow/__pycache__/core.cpython-312.pyc
+pyworkflow/__pycache__/exceptions.cpython-312.pyc
+pyworkflow/__pycache__/parameters.cpython-312.pyc
+pyworkflow/__pycache__/utils.cpython-312.pyc
