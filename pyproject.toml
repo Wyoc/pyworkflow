@@ -5,13 +5,13 @@ description = "A flexible workflow orchestration library with parameter validati
 authors = ["Jean Dupuy jean.dupuy@protonmail.com"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "workflow_generator"}]
+packages = [{ include = "workflow_generator" }]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-typing-extensions = "^4.5.0"  # For enhanced typing support
-dataclasses = {version = "^0.8", python = "<3.7"}  # Only for Python 3.6
-pathlib = {version = "^1.0.1", python = "<3.6"}  # Only for older Python versions
+typing-extensions = "^4.5.0"                        # For enhanced typing support
+dataclasses = { version = "^0.8", python = "<3.7" } # Only for Python 3.6
+pathlib = { version = "^1.0.1", python = "<3.6" }   # Only for older Python versions
 psutil = "^6.1.0"
 
 [tool.poetry.group.dev.dependencies]
@@ -52,12 +52,12 @@ strict_optional = true
 
 [tool.pylint.messages_control]
 disable = [
-    "C0111",  # missing-docstring
-    "R0903",  # too-few-public-methods
-    "C0103",  # invalid-name
+    "C0111", # missing-docstring
+    "R0903", # too-few-public-methods
+    "C0103", # invalid-name
 ]
 
 [tool.pytest.ini_options]
 minversion = "6.0"
-addopts = "-ra -q --cov=workflow_generator"
+# addopts = "-ra -q --cov=workflow_generator"
 testpaths = ["tests"]
